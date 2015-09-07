@@ -421,3 +421,11 @@ Small Device Styles
   }
 
 }
+
+.enable {
+  color: #99FF00;
+}
+
+.disable {
+  color: #CCC;
+}
