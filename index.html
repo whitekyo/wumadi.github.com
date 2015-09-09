@@ -93,6 +93,20 @@
             <p><span class="enable">Apple</span>&nbsp;<span class="disable">Android-4.1</span></p>
           </li>
         </ol>
+        <p>HTML5 form validate</p>
+        <form name="register">
+          <p>
+              <label for="runnername">Runner</label>
+              <input type="text" id="runnername" name="runnername" placeholder="First and last name" required/>
+          </p>
+          <p>
+              <label for="person">Person</label>
+              <input type="text" id="person" pattern="[0-9]{4}" required/>
+          </p>
+          <p>
+              <input id="checkForm" type="button" value="checkForm"/>
+          </p>
+      </form>
       </section>
     </div>
     
@@ -105,6 +119,33 @@
     </div>
 
     
-
+  <script type="text/javascript">
+        var error = [];
+        function invalidHandler(evt){
+            var target = evt.target || evt.srcElement;
+            var label = target.parentNode.getElementsByTagName("label")[0];
+            evt.stopPropagation();
+            evt.preventDefault();
+            error.push({
+                name: label.innerText,
+                msg: target.validationMessage
+            });
+            console.log(target.validity);
+            console.log(target.validationMessage);
+        }
+        function loadDemo(){
+            document.register.addEventListener("invalid", invalidHandler, true);
+            var oCheckForm = document.getElementById("checkForm");
+            oCheckForm.onclick = function(){
+                if(!document.register.checkValidity()){
+                    if(error.length){
+                        alert(error[0].name + ' ' + error[0].msg);
+                        error = [];
+                    }
+                }
+            };
+        }
+        window.addEventListener("load", loadDemo, false);
+  </script>
   </body>
 </html>
