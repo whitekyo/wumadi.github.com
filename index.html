@@ -106,6 +106,7 @@
           <p>
               <input id="checkForm" type="submit" value="checkForm"/>
           </p>
+          <p>Android默认会自动校验，iphone则不会。统一使用脚本拦截。对于ErrorMessage不同手机，不同浏览器内核。展示不一致。</p>
       </form>
       </section>
     </div>
@@ -145,7 +146,7 @@
                 }
             };
         }
-        //window.addEventListener("load", loadDemo, false);
+        window.addEventListener("load", loadDemo, false);
   </script>
   </body>
 </html>
