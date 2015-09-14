@@ -108,11 +108,12 @@
           </p>
           <p>Android默认会自动校验，iphone则不会。统一使用脚本拦截。对于ErrorMessage不同手机，不同浏览器内核。展示不一致。</p>
       </form>
-      <p>移动端对keyup，input的测试</p>
+      <p>移动端对keyup，input，propertychange的测试</p>
       keyup：<input id="keyupTest" type="text"/>
       <p>keyup：iphone正常，Android会触发两次</p>
-      keyup：<input id="inputTest" type="text"/>
-      <p>input：</p>
+      input：<input id="inputTest" type="text"/>
+      <p>input：iphone正常，Android会触发两次</p>
+      propertychange：<input id="propertychangeTest" type="text">
       </section>
     </div>
     
@@ -161,6 +162,12 @@
         
         var oInput1 = document.getElementById("inputTest");
         oInput1.addEventListener("input", function(e){
+          var target = e.target;
+          alert(target.value);
+        }, false);
+        
+        var oInput2 = document.getElementById("propertychangeTest");
+        oInput1.addEventListener("propertychange", function(e){
           var target = e.target;
           alert(target.value);
         }, false);
