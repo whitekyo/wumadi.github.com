@@ -108,6 +108,8 @@
           </p>
           <p>Android默认会自动校验，iphone则不会。统一使用脚本拦截。对于ErrorMessage不同手机，不同浏览器内核。展示不一致。</p>
       </form>
+      <p>移动端对keyup的测试</p>
+      <input id="keyupTest" type="text"/>
       </section>
     </div>
     
@@ -147,6 +149,13 @@
             };
         }
         window.addEventListener("load", loadDemo, false);
+        
+        var oInput = document.getElementById("keyupTest");
+        oInput.addEventListener("keyup", function(e){
+          var target = e.target;
+          alert(target.value);
+        }, false);
+        
   </script>
   </body>
 </html>
