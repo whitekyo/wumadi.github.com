@@ -110,11 +110,9 @@
       </form>
       <p>移动端对keyup，input，propertychange的测试</p>
       keyup：<input id="keyupTest" type="text"/>
-      <p>keyup：iphone正常，Android会触发两次</p>
+      <p>keyup：iphone正常（删除键会不停触发），Android会触发两次</p>
       input：<input id="inputTest" type="text"/>
-      <p>input：iphone正常，Android会触发两次</p>
-      propertychange：<input id="propertychangeTest" type="text">
-      </section>
+      <p>input：iphone正常（删除键正常），Android会触发两次</p>
     </div>
     
     <!-- FOOTER  -->
@@ -166,11 +164,6 @@
           alert(target.value);
         }, false);
         
-        var oInput2 = document.getElementById("propertychangeTest");
-        oInput1.addEventListener("propertychange", function(e){
-          var target = e.target;
-          alert(target.value);
-        }, false);
         
   </script>
   </body>
