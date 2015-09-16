@@ -11,12 +11,20 @@
       .father {
             display: -webkit-flex;
             display: -moz-flex;
+            display: -o-flex;
+            display: flex;
             -webkit-flex-direction: row;
-            -moze-flex-direction: row;
+            -moz-flex-direction: row;
+            -o-flex-direction: row;
+            flex-direction: row;
             -webkit-justify-content: space-between;
             -moz-justify-content: space-between;
+            -o-justify-content: space-between;
+            justify-content: space-between;
             -webkit-flex-wrap: wrap;
             -moz-flex-wrap: wrap;
+            -o-flex-wrap: wrap;
+            flex-wrap: wrap;
         }
         .item {
             width: 24%;
@@ -149,6 +157,7 @@
           <div class="item">
           </div>
       </div>
+      <p>iphone需要-webkit的前缀，才可以生效</p>
     </div>
     
     <!-- FOOTER  -->
