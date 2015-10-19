@@ -163,7 +163,8 @@
           </div>
         </div>
       </div>
-      <p id="touchOut"></p>
+      touchend:<p id="touchOut"></p>
+      touch-click:<p id="touch-click"></p>
     </div>
     
     <!-- FOOTER  -->
@@ -217,18 +218,19 @@
         alert(JSON);
         
         var touchDiv = document.getElementsByClassName("touchTest")[0],
-            pOut = document.getElementById("touchOut");
+            pOut = document.getElementById("touchOut"),
+            pClick = document.getElementById("touch-click");
         touchDiv.addEventListener("touchstart", function(e){
           //alert(e.target);
         }, false);
         touchDiv.addEventListener("touchmove", function(e){
-          pOut.innerHTML = e.target.id;
+          
         }, false);
         touchDiv.addEventListener("touchend", function(e){
-          alert(e.touches);
+          pOut.innerHTML = "touchend---" + Date.now();
         }, false);
         touchDiv.addEventListener("click", function(){
-          alert("click");
+          pClick.innerHTML = "click---" + Date.now();
         }, true);
   </script>
   </body>
