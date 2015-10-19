@@ -155,6 +155,15 @@
       </div>
       <p>iphone需要-webkit的前缀，才可以生效。支持主流浏览器</p>
       <p>Android的UC浏览器不支持flex。有些自带浏览器可以。Android4.4版本以上支持该属性，但受限于各种浏览器。支持效果不一</p>
+      <p>touch事件测试</p>
+      <div style="width: 200px; height: 200px; background-color:red;" id="red" class="touchTest">
+        <div style="width: 100px; height:100px; background-color: orange;" id="orange">
+          <div style="width: 50px; height: 50px; background-color: yellow;" id="yellow">
+            <div style="width: 25px; height: 25px; background-color: green;" id="green"></div>
+          </div>
+        </div>
+      </div>
+      <p id="touchOut"></p>
     </div>
     
     <!-- FOOTER  -->
@@ -207,6 +216,17 @@
         }, false);
         alert(JSON);
         
+        var touchDiv = document.getElementsByClassName("touchTest")[0],
+            pOut = document.getElementById("touchOut");
+        touchDiv.addEventListener("touchstart", function(e){
+          alert(e.target);
+        }, false);
+        touchDiv.addEventListener("touchmove", function(e){
+          pOut.innerHTML = e.target.id;
+        }, false);
+        touchDiv.addEventListener("touchend", function(e){
+          alert("finish");
+        }, false);
   </script>
   </body>
 </html>
