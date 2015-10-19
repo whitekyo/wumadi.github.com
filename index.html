@@ -219,7 +219,7 @@
         var touchDiv = document.getElementsByClassName("touchTest")[0],
             pOut = document.getElementById("touchOut");
         touchDiv.addEventListener("touchstart", function(e){
-          alert(e.target);
+          //alert(e.target);
         }, false);
         touchDiv.addEventListener("touchmove", function(e){
           pOut.innerHTML = e.target.id;
