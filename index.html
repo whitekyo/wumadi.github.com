@@ -7,231 +7,118 @@
     <meta name="description" content="Wumadi.GitHub.com : 无码帝博客">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <style type="text/css">
-      .father {
-            display: -webkit-flex;
-            display: -moz-flex;
-            display: -o-flex;
-            display: -ms-flex;
-            display: flex;
-            -webkit-flex-direction: row;
-            -moz-flex-direction: row;
-            -o-flex-direction: row;
-            -ms-flex-direction: row;
-            flex-direction: row;
-            -webkit-justify-content: space-between;
-            -moz-justify-content: space-between;
-            -o-justify-content: space-between;
-            -ms-justify-content: space-between;
-            justify-content: space-between;
-            -webkit-flex-wrap: wrap;
-            -moz-flex-wrap: wrap;
-            -ms-flex-wrap: wrap;
-            -o-flex-wrap: wrap;
-            flex-wrap: wrap;
-        }
-        .item {
-            width: 24%;
-            text-align: center;
-            height: 30px;
-            background-color: red;
-        }
-    </style>
-    <title>Wumadi.GitHub.com</title>
   </head>
-
   <body>
+      <section class="container">
+            <aside class="personal">
+                <figure>
+                    <img src="img/me.jpg" alt="照片" class="me-pic"/>
+                    <h1>杨成</h1>
+                    <p>前端工程师</p>
+                </figure>
+                <article>
+                    <h3 class="important-font">关于我</h3>
+                    <dl class="about-me clearfix">
+                        <dt>年龄：</dt>
+                        <dd>26</dd>
+                        <dt>性别：</dt>
+                        <dd>男</dd>
+                        <dt>婚姻：</dt>
+                        <dd>未婚</dd>
+                        <dt>籍贯：</dt>
+                        <dd>江苏</dd>
+                        <dt>城市：</dt>
+                        <dd>上海</dd>
+                        <dt>电话：</dt>
+                        <dd>15951868640</dd>
+                        <dt>专业：</dt>
+                        <dd>计算机科学与技术</dd>
+                    </dl>
+                </article>
+                <article>
+                    <h3 class="important-font">自我评价</h3>
+                    <p class="first-word">性格开朗，善于沟通，学习勤奋，在工作上有责任心和良好的团队意识。</p>
+                    <p class="first-word">具备良好的分析解决问题能力，善于学习，有独立承担任务的能力</p>
+                    <p class="first-word">喜爱web前端，喜欢研究，乐于分享</p>
+                </article>
+                <article>
+                    <h3 class="important-font">联系我</h3>
+                    <p class="blog" title="博客园">博客：<a href="http://www.cnblogs.com/wumadi/">http://www.cnblogs.com/wumadi/</a></p>
+                    <p class="weixin" title="微信">微信：Ysheng-bbk</p>
+                    <p class="qq" title="Email">邮箱：474398734@qq.com</p>
+                    <p class="iphone" title="联系电话">手机：15951868640</p>
+                </article>
+            </aside>
+            <article class="content">
+                <div>
+                    <h2 class="job">工作经验</h2>
+                    <section class="programme first-line">
+                        <h3 class="important-font">平安证券 <span class="time">(2014.12 - 至今)</span></h3>
+                        <section class="dialog">
+                            <h4 class="important-font">大数据服务平台</h4>
+                            <p class="first-word">大数据服务平台提供平安证券市场和营销团队使用，上传修改配置平安证券app的功能。</p>
+                            <p class="first-word">我负责服务平台的前端环境搭建、制定rest接口、页面重构、页面业务逻辑编写、前后端接口联调、后期debug和bugfix等前端开发工作。</p>
+                            <p class="first-word"><b>属于大数据PC端项目，项目中使用angularJS + jQuery + seajs的，与大数据组制定接口，并对原有系统进行了重构。</b></p>
+                            <p></p>
+                        </section>
+                        <section class="dialog">
+                            <h4 class="important-font">平安证券安e理财app</h4>
+                            <p class="first-word">安e理财app为用户提供一站式理财服务。</p>
+                            <p class="first-word">我负责项目中部分功能(期货预约开户，服务中心)的开发。工作范围涉及到制定rest接口、根据设计稿重构页面、编写页面业务逻辑、前后端接口联调、与第三方对接工作、后期debug和bugfix等前端开发工作。</p>
+                            <p class="first-word"><b>属于移动H5项目，项目中需要与app和后端java组进行配合制定接口，库方面使用zepto.js + undersoce.js。模块化seajs，打包grunt。另外花时间学习了公司现有的插件和框架库。</b></p>
+                        </section>
+                        <section class="dialog">
+                            <h4 class="important-font">晒单项目</h4>
+                            <p class="first-word">晒单是定期为用户提供市场较好的股票，供股民参考。项目目的为了吸引用户选择平安证券开户。</p>
+                            <p class="first-word">我负责晒单项目的PC端(支持主流浏览器)和Mobile端开发。工作涉及制定rest接口、根据涉及稿重构页面、编写页面业务逻辑、前后端接口联调、跨域调用第三方接口解决方案、后期debug和bugfix等前端开发工作。</p>
+                            <p class="first-word"><b>接手公司项目，进行后续功能模块开发，主要负责PC端，接触到与后端程序员进行接口制定，并参与接口调试。部分数据传输采用jsonp跨域解决方案</b></p>
+                        </section>
+                    </section>
+                    <section class="programme">
+                        <h3>上海春宇数字科技有限公司 <span class="time">(2013.7 - 2014.12)</span></h3>
+                        <section class="dialog">
+                            <h4 class="important-font">公司官方网站</h4>
+                            <p class="first-word">负责项目中所有页面的开发和交互的书写，对公司内部的业务框架进行了第五个版本的迭代。为将html转成jsp的工作提供支持，后期对jsp页面和网站性能进行修改和优化。</p>
+                            <p class="first-word"><b>初步接触requireJS并将其使用到公司的项目中，官网项目中逐步试水one page one js one css的思想，尝试单页开发。后期学习了grunt相关工程化打包压缩方案</b></p>
+                        </section>
+                        <section class="dialog">
+                            <h4 class="important-font">春宇金融网站开发</h4>
+                            <p class="first-word">春宇金融网站提供企业或个人进行小额贷款、理财服务</p>
+                            <p class="first-word">我负责服务平台的前端环境搭建、页面重构、页面业务逻辑编写、后期debug和bugfix等前端开发工作。</p>
+                            <p class="first-word"><b>将jquery-validate校验整合入公司UI框架，使用bootstrap开发金融网站的相关后台管理系统</b></p>
+                        </section>
+                        <section class="dialog">
+                            <h4 class="important-font">化工平台Chemon、Tradx</h4>
+                            <p class="first-word">Chemon、Tradx为国内外化工贸易提供一站式服务</p>
+                            <p class="first-word">我负责项目中部分页面的开发。工作范围涉及到根据设计稿重构页面、编写页面业务逻辑、后期debug和bugfix等前端开发工作。期间项目经历过多次版本更新。</p>
+                            <p class="first-word"><b>开发HTML页面并帮助后端程序员转成jsp页面，编写过相关jQuery插件，如港口选择器，整合上传控件，表单控件等。利用闲暇时间整理出基于公司业务的<a href="javascript:void(0);">Sunivo-ui库</a></b></p>
+                        </section>
+                    </section>
+                    <section class="programme">
+                        <h3>大连简柏特信息技术服务有限公司 <span class="time">(2012.3 - 2013.6)</span></h3>
+                        <section class="dialog">
+                            <h4 class="important-font">CEO-dashboard</h4>
+                            <p class="first-word">公司内部日常管理系统</p>
+                            <p class="first-word">我负责负责项目中页面业务逻辑编写、后期debug和bugfix等前端开发工作。</p>
+                            <p class="first-word"><b>本项目中使用到jQuery库进行快速开发，列表系统大量使用到事件委托。</b></p>
+                        </section>
+                        <section class="dialog">
+                            <h4 class="important-font">百威英博内部管理系统</h4>
+                            <p class="first-word">为百威公司提供一套内部管理系统</p>
+                            <p class="first-word">我负责项目中部分页面的开发。工作范围涉及到根据设计稿重构页面、编写页面业务逻辑、后期debug和bugfix等前端开发工作。期间项目经历过多次版本更新。</p>
+                            <p class="first-word"><b>对于公司的项目开发流程有了一定了解，开始书写HTML页面，页面js开发。写一些C#的controller层业务代码</b></p>
+                        </section>
+                    </section>
+                </div>
+                <div>
+                    <h2>教育经历</h2>
+                    <section class="dialog">
+                        <h3>南京大学金陵学院</h3>
+                        <p class="first-word"><strong>本科</strong> <strong>2008.9 ~ 2012.6</strong></p>
+                    </section>
+                </div>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/whitekyo/wumadi.github.com">View on GitHub</a>
-
-          <h1 id="project_title">Wumadi.GitHub.com</h1>
-          <h2 id="project_tagline">无码帝博客</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/whitekyo/wumadi.github.com/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/whitekyo/wumadi.github.com/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a id="关于标签a的伪类实验" class="anchor" href="#%E5%85%B3%E4%BA%8E%E6%A0%87%E7%AD%BEa%E7%9A%84%E4%BC%AA%E7%B1%BB%E5%AE%9E%E9%AA%8C" aria-hidden="true"><span class="octicon octicon-link"></span></a>关于标签A的伪类实验</h3>
-
-<blockquote>
-<p>针对IE5.5至IE11中，对伪类的支持都不同。详细情况跟href的属性值有关系。做了一番实验，效果图如下：</p>
-</blockquote>
-      </section>
-      <section class="inner">
-        <p>电话测试(安卓或IOS)</p>
-        <a href="tel:123456789">123456789</a>
-        <p>H5 type类型测试</p>
-        <ol>
-          <li>color: <input type="color"/> 
-            <p>
-              <span class="disable">Apple</span>&nbsp;<span class="enable">Android-4.1</span>
-            </p>
-          </li>
-          <li>date: <input type="date"/> 
-            <p>
-              <span class="enable">Apple</span>&nbsp;<span class="enable">Android-4.1</span>
-            </p>
-          </li>
-          <li>datetime: <input type="datetime"/> 
-            <p>
-              <span class="disable">Apple</span>&nbsp;<span class="enable">Android-4.1</span></li>
-            </p>
-          <li>datetime-local: <input type="datetime-local"/> 
-            <p>
-              <span class="enable">Apple</span>&nbsp;<span class="enable">Android-4.1</span>
-            </p>
-          </li>
-          <li>month: <input type="month"/> 
-            <p><span class="enable">Apple</span>&nbsp;<span class="enable">Android-4.1</span></p>
-          </li>
-          <li>week: <input type="week"/> 
-            <p><span class="disable">Apple</span>&nbsp;<span class="enable">Android-4.1</span></p>
-          </li>
-          <li>time: <input type="time"/> 
-            <p><span class="disable">Apple</span>&nbsp;<span class="enable">Android-4.1</span></p>
-          </li>
-          <li>email: <input type="email"/> 
-            <p><span class="enable">Apple</span>&nbsp;<span class="enable">Android-4.1</span></p>
-          </li>
-          <li>file: <input type="file"/> 
-            <p><span class="enable">Apple</span>&nbsp;<span class="enable">Android-4.1</span></p>
-          </li>
-          <li>number: <input type="number"/> 
-            <p><span class="enable">Apple</span>&nbsp;<span class="enable">Android-4.1</span></p>
-          </li>
-          <li>range: <input type="range" min="1" max="10"/> 
-            <p><span class="enable">Apple</span>&nbsp;<span class="enable">Android-4.1</span></p>
-          </li>
-          <li>search: <input type="search"/> 
-            <p><span class="enable">Apple</span>&nbsp;<span class="disable">Android-4.1</span></p>
-          </li>
-          <li>tel: <input type="tel"/> 
-            <p><span class="enable">Apple</span>&nbsp;<span class="enable">Android-4.1</span></p>
-          </li>
-          <li>url: <input type="url"/> 
-            <p><span class="enable">Apple</span>&nbsp;<span class="disable">Android-4.1</span></p>
-          </li>
-        </ol>
-        <p>HTML5 form validate</p>
-        <form name="register">
-          <p>
-              <label for="runnername">Runner</label>
-              <input type="text" id="runnername" name="runnername" placeholder="First and last name" required/>
-          </p>
-          <p>
-              <label for="person">Person</label>
-              <input type="text" id="person" pattern="[0-9]{4}" required/>
-          </p>
-          <p>
-              <input id="checkForm" type="submit" value="checkForm"/>
-          </p>
-          <p>Android默认会自动校验，iphone则不会。统一使用脚本拦截。对于ErrorMessage不同手机，不同浏览器内核。展示不一致。</p>
-      </form>
-      <p>移动端对keyup，input，propertychange的测试</p>
-      keyup：<input id="keyupTest" type="text"/>
-      <p>keyup：iphone正常（删除键会不停触发），Android会触发两次</p>
-      input：<input id="inputTest" type="text"/>
-      <p>input：iphone正常（删除键正常），Android会触发两次</p>
-      <p>flex布局测试</p>
-      <div class="father">
-          <div class="item">
-          </div>
-          <div class="item">
-          </div>
-          <div class="item">
-          </div>
-          <div class="item">
-          </div>
-      </div>
-      <p>iphone需要-webkit的前缀，才可以生效。支持主流浏览器</p>
-      <p>Android的UC浏览器不支持flex。有些自带浏览器可以。Android4.4版本以上支持该属性，但受限于各种浏览器。支持效果不一</p>
-      <p>touch事件测试</p>
-      <div style="width: 200px; height: 200px; background-color:red;" id="red" class="touchTest">
-        <div style="width: 100px; height:100px; background-color: orange;" id="orange">
-          <div style="width: 50px; height: 50px; background-color: yellow;" id="yellow">
-            <div style="width: 25px; height: 25px; background-color: green;" id="green"></div>
-          </div>
-        </div>
-      </div>
-      touchend:<p id="touchOut"></p>
-      touch-click:<p id="touch-click"></p>
-    </div>
-    
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Wumadi.GitHub.com maintained by <a href="https://github.com/whitekyo">whitekyo</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-  <script type="text/javascript">
-        var error = [];
-        function invalidHandler(evt){
-            var target = evt.target || evt.srcElement;
-            var label = target.parentNode.getElementsByTagName("label")[0];
-            evt.stopPropagation();
-            evt.preventDefault();
-            error.push({
-                name: label.innerText,
-                msg: target.validationMessage
-            });
-            console.log(target.validity);
-            console.log(target.validationMessage);
-        }
-        function loadDemo(){
-            document.register.addEventListener("invalid", invalidHandler, true);
-            var oCheckForm = document.getElementById("checkForm");
-            oCheckForm.onclick = function(){
-                if(!document.register.checkValidity()){
-                    if(error.length){
-                        alert(error[0].name + ' ' + error[0].msg);
-                        error = [];
-                    }
-                }
-            };
-        }
-        window.addEventListener("load", loadDemo, false);
-        
-        var oInput = document.getElementById("keyupTest");
-        oInput.addEventListener("keyup", function(e){
-          var target = e.target;
-          alert(target.value);
-        }, false);
-        
-        var oInput1 = document.getElementById("inputTest");
-        oInput1.addEventListener("input", function(e){
-          var target = e.target;
-          alert(target.value);
-        }, false);
-        alert(JSON);
-        
-        var touchDiv = document.getElementsByClassName("touchTest")[0],
-            pOut = document.getElementById("touchOut"),
-            pClick = document.getElementById("touch-click");
-        touchDiv.addEventListener("touchstart", function(e){
-          //alert(e.target);
-        }, false);
-        touchDiv.addEventListener("touchmove", function(e){
-          
-        }, false);
-        touchDiv.addEventListener("touchend", function(e){
-          pOut.innerHTML = "touchend---" + Date.now();
-        }, false);
-        touchDiv.addEventListener("click", function(){
-          pClick.innerHTML = "click---" + Date.now();
-        }, false);
-  </script>
+            </article>
+        </section>
   </body>
 </html>
